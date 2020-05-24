@@ -8,6 +8,6 @@ jobs:
       - checkout
       - setup_remote_docker
       - run: |
-          docker build -t [ziwangdev]/around .
+          docker build -t ziwangdev/around .
           docker login -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_PASSWORD"
-          docker push [ziwangdev]/around
+          docker push ziwangdev/around
